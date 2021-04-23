@@ -15,6 +15,41 @@
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
   <body>
+    <nav class="navbar navbar-dark navbar-expand-sm bg-primary fixed-top">
+      <a class="navbar-brand" href="#">Ristorante Con Fusion</a>
+      <!-- aria-expanded="false"
+        aria-label="Toggle navigation"
+       
+        aria-controls="collapsibleNavId"
+        
+      >
+       -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#Navbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="Navbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     <header class="jumbotron">
       <div class="container">
         <div class="row row-header">
@@ -32,6 +67,10 @@
     </header>
 
     <div class="cotainer">
+      <ol class="col-12 breadcrumb">
+        <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+        <li class="breadcrumb-item active">About Us</li>
+      </ol>
       <div class="row row-content">
         <div class="col-12 col-sm-4 offset-1 col-md-3">
           <h3>About Us</h3>

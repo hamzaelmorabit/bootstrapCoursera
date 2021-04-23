@@ -22,21 +22,40 @@
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <body>
-    <div class="custom-control custom-checkbox pmd-checkbox">
-      <input
-        class="custom-control-input"
-        type="checkbox"
-        value=""
-        id="customCheckbox2"
-      />
-      <label
-        class="custom-control-label pmd-checkbox-ripple-effect"
-        for="customCheckbox2"
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top">
+      <a class="navbar-brand" href="#">Ristorante Con Fusion</a>
+      <!-- aria-expanded="false"
+        aria-label="Toggle navigation"
+         
+        aria-controls="collapsibleNavId"
+        --
       >
-        Option one is this and that&mdash;be sure to include why it's great
-      </label>
-    </div>
-
+       -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#Navbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="Navbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <header class="jumbotron">
       <div class="container">
         <div class="row row-header">
