@@ -21,18 +21,24 @@
     rel="stylesheet"
     href="node_modules/bootstrap-social/bootstrap-social.css"
   />
+  <script>
+    $(function () {
+      $('[data-toggle="popover"]').popover();
+    });
+  </script>
   <body>
     <nav class="navbar navbar-dark navbar-expand-sm bg-primary fixed-top">
-      <a class="navbar-brand" href="#">
+      <!-- Click to toggle popover -->
+      <a
+        class="navbar-brand"
+        href="#"
+        data-toggle="popover"
+        title="Popover title"
+        data-content="This LogO IS ABout ..."
+      >
         <img src="img/logo.png" height="30" width="41" />
       </a>
-      <!-- aria-expanded="false"
-        aria-label="Toggle navigation"
-       
-        aria-controls="collapsibleNavId"
-        
-      >
-       -->
+
       <button
         class="navbar-toggler"
         type="button"
