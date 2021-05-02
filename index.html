@@ -30,11 +30,11 @@
     rel="stylesheet"
     href="node_modules/bootstrap-social/bootstrap-social.css"
   />
-  <script>
+  <!-- <script>
     $(document).ready(function () {
       $('[data-toggle="tooltip"]').tooltip();
     });
-  </script>
+  </script> -->
   <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top">
       <a class="navbar-brand" href="#">
@@ -97,7 +97,7 @@
           <div class="modal-body">
  
              
-           
+           <form>
 
               <div class="form-group row">
                 <label class="col-md-2 col-form-label" for="number-guest"
@@ -177,7 +177,25 @@
                     >
                   </div>
                 </div>
-
+                 <div class="container">
+                  <div class="form-row">
+             
+                      <div class="col-12 col-md-5">
+                    Section
+                   </div>
+                    <div class="col-md-1">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-success active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
+                    </label>
+                   
+                    </label>
+                    <label class="btn btn-danger">
+                    <input type="radio" name="options" id="option3" autocomplete="off"> Smoking
+                    </label>
+                    </div>
+                  </div>
+                </div>
                 <div class="row">
                   <label for="date" class="col-md-2 col-form-label">
                     Date and Time
@@ -200,7 +218,7 @@
                       placeholder="Time"
                     />
                   </div>
-                </div>
+                </div> </div>
                 <div class="container">
                   <div class="form-row">
                     <div class="col-12 col-md-2">
@@ -217,15 +235,15 @@
                          Reserve 
                       </button>
                     </div>
-                  </div>
-                </div>
-              </div>
-
-             
+                  </div>                          
+              </div>  
+                </div>  
+                </div>  
+                </div>  
             </form>
           </div>
         </div>
-      </div>
+ </div>
     </div>
 
     <header class="jumbotron">
@@ -244,17 +262,28 @@
           </div>
 
           <div class="col-12 col-sm-6 col-md align-self-center">
-            <a
+               <!-- data-toggle="tooltip" -->
+                  <!-- title="Or Call us at  <br><strong>+852 12345678</strong>" -->
+                    <!-- onClick="window.location='#card'"
+              data-placement="bottom"
+            
+              data-html="true"-->
+            <!-- <a
               role="button"
               class="btn btn-block nav-link btn-warning"
-              data-toggle="tooltip"
-              data-html="true"
-              onClick="window.location='#card'"
-              title="Or Call us at  <br><strong>+852 12345678</strong>"
-              data-placement="bottom"
-              href="#reserveform"
+           
+              data-target="#loginModal"
+            
+            
+            href="#loginModal"
               >Reserve Table</a
-            >
+            > -->
+
+             <a data-toggle="modal" 
+                class="btn btn-block nav-link btn-warning"
+             data-target="#loginModal">
+         Reserve Table
+          </a>
           </div>
         </div>
       </div>
