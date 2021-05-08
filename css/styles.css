@@ -40,3 +40,7 @@ address {
   border-bottom: 1px solid #ddd;
   padding: 10px;
 }
+
+.new-tab-main {
+  background: #000;
+}
