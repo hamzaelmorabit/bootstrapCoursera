@@ -45,6 +45,7 @@ body {
   padding: 10px;
 }
 
+
 .carousel {
   background: #512da8;
 }
@@ -63,4 +64,5 @@ body {
   position: absolute;
   bottom: 0px;
   z-index: 1;
-}
+
+
