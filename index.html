@@ -45,13 +45,24 @@
                 $("#mycarousel").carousel('cycle');
             });
         }); 
-            <!--  -->
-      
+           
       -->
       <script>
         $(document).ready(function(){
+          $(".navbar-text").click(function(){
+            $('.trigerModal').attr('data-target','#loginModal1');
+            $('.trigerModal').attr('data-toggle','modal');
+
+          })
+
+             $("#reserveTable").click(function(){
+              $('#reserveTable').attr('data-target','#loginModal');
+              $('#reserveTable').attr('data-toggle','modal');
+
+          })
+
           $("#mycarousel").carousel( { interval: 2000 } );
-    $("#carouselButton").click(function(){
+              $("#carouselButton").click(function(){
                 if ($("#carouselButton").children("span").hasClass('fa-pause')) {
                     $("#mycarousel").carousel('pause');
                     $("#carouselButton").children("span").removeClass('fa-pause');
@@ -107,15 +118,60 @@
           </li>
         </ul>
 
-        <!-- Modal References -->
+        <!-- Modal References 
+         data-toggle="modal" 
+          data-target="#loginModal1"
+        -->
         <span class="navbar-text">
-          <a data-toggle="modal" data-target="#loginModal">
+          <a 
+         
+          class="trigerModal"
+          >
             <span class="fa fa-sign-in bg-gray"></span> Login
           </a>
         </span>
       </div>
     </nav>
 
+
+        <div id="loginModal1" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
     <!-- Modal -->
 
     <div id="loginModal" class="modal fade" role="dialog">
@@ -311,11 +367,16 @@
             
             href="#loginModal"
               >Reserve Table</a
-            > -->
+            > 
+                       data-toggle="modal" 
+             data-target="#loginModal"
 
-             <a data-toggle="modal" 
+          -->
+
+             <a 
+             id="reserveTable"
                 class="btn btn-block nav-link btn-warning"
-             data-target="#loginModal">
+             >
          Reserve Table
           </a>
           </div>
